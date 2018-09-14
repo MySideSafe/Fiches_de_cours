@@ -1,0 +1,47 @@
+1- Initier un répository :
+
+git init
+
+---------------------------
+
+2-Premier COMMIT
+
+git add mon_fichier  Pour ajouter le fichier à l'index
+git commit -m "Message de commit"
+Si le fichier est déjà ajouté à l'index
+git commit -am "Message de commit"
+
+---------------------------
+
+3-Lire l'historique
+
+Git log
+
+---------------------------
+
+4-Se positionner sur un commit
+
+git checkout SHADuCommit
+
+---------------------------
+
+5-Récuperer le code d'un repository
+
+git clone adresse_du_repository
+
+---------------------------
+
+6-Envoyer son code sur github
+
+git push origin master 
+git push nom_du_remote nom_de_la_branch
+
+---------------------------
+
+7-Récuperer des modifications
+ 
+git pull origin master
+Permet de ne récuperer que les fichier qui ont été modifié à la différence d'un clone
+
+---------------------------
+
