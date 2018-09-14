@@ -45,3 +45,44 @@ Permet de ne récuperer que les fichier qui ont été modifié à la différence d'un 
 
 ---------------------------
 
+8 Creez des branches
+
+git branch ma_branche
+puis git checkout ma_branche pour se positionner dessus
+<=> git checkout -b ma_branche
+
+git branch : affiche les branches existantes
+
+---------------------------
+
+9 Fusionner des branches
+
+En ayant une branche A et une branche B
+ Merger B SUR A
+On se positionne sur A
+et 
+git merge B
+
+Attention à la resolution des conflits
+
+---------------------------
+
+10 Retrouver qui à fait une modif
+
+git blame monfichier va montrer l'ensemble des modifications ligne par ligne sur le fichier avec 
+leur SHA de reference
+On peut ensuite faire un git show SHA pour avoir le détail exact des modifications
+
+
+---------------------------
+
+11 Ignorer des fichiers/dossiers
+
+Il faut creer un fichier .gitignore et y indiquer les fichiers / dossiers et git ne les prendra plus en compte
+
+---------------------------
+
+11 Évitez des commits superflus
+
+git stash pour mettre de côté son travail
+git stash pop pour le récupérer.
